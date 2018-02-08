@@ -39,18 +39,32 @@ public class MyAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        //Se copia la referencia de la vista
-        View v = convertView;
+        //ViewHolderPattern
+        ViewHolder holder;
 
-        //Se infla la vista con el layout personalizado
-        LayoutInflater layoutInflater = LayoutInflater.from(this.context);
-        v = layoutInflater.inflate(R.layout.list_item,null);
+        if (convertView == null){
+            //Se infla la vista con el layout personalizado
+            LayoutInflater layoutInflater = LayoutInflater.from(this.context);
+            convertView = layoutInflater.inflate(this.layout,null);
+
+            holder = new ViewHolder();
+
+            holder.nameTextView = (TextView) convertView.findViewById(R.id.textView);
+            convertView.setTag(holder);
+
+        }
+        else{
+            holder = (ViewHolder) convertView.getTag();
+        }
 
         String currentName = names.get(position);
+        holder.nameTextView.setText(currentName);
 
-        TextView textView = (TextView) v.findViewById(R.id.textView);
-        textView.setText(currentName);
 
-        return v;
+        return convertView;
+    }
+    static class ViewHolder{
+        private TextView nameTextView;
+
     }
 }

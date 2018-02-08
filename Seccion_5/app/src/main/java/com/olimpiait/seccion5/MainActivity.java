@@ -28,10 +28,53 @@ public class MainActivity extends AppCompatActivity {
         names.add("Carlos");
         names.add("Juan");
         names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        names.add("Andres");
+        names.add("Carlos");
+        names.add("Juan");
+        names.add("Pedro");
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
-
-        listView.setAdapter(adapter);
+        //listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
