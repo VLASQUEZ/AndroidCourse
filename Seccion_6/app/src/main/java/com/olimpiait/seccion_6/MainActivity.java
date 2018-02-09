@@ -6,9 +6,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         mAdapter = new MyAdapter(movies, R.layout.recycler_view_item, new MyAdapter.OnItemClickListener() {
             @Override
-            public void OnItemClick(String name, int position) {
+            public void OnItemClick(Movie movie, int position) {
                 //Toast.makeText(MainActivity.this,name + " - "+ position, Toast.LENGTH_SHORT).show();
-                //deleteName(position);
+                deleteMovie(position);
             }
         });
 
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.add_name:
-                //this.addName(0);
+                this.addMovie(0);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -72,15 +70,15 @@ public class MainActivity extends AppCompatActivity {
 
         }};
     }
-    /*private void addName(int position){
-        movies.add(position,"New Name"+ (++counter));
+    private void addMovie(int position){
+        movies.add(position, new Movie("New Movie "+(++counter),R.drawable.new_movie));
         mAdapter.notifyItemInserted(position);
         mLayoutManager.scrollToPosition(position);
 
     }
-    private void deleteName(int position){
+    private void deleteMovie(int position){
         movies.remove(position);
         mAdapter.notifyItemRemoved(position);
 
-    }*/
+    }
 }
