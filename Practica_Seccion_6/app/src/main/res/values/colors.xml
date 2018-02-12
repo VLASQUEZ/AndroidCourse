@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorCardViewBackGround">#C2185B</color>
+    <color name="colorAlert">#BA0F0F</color>
 </resources>
