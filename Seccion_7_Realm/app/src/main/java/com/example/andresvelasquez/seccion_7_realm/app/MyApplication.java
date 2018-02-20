@@ -21,9 +21,11 @@ public class MyApplication extends Application {
     public static AtomicInteger noteId = new AtomicInteger();
     @Override
     public void onCreate() {
-        setupRealm();
         super.onCreate();
+        Realm.init(this);
+        setupRealm();
         Realm realm = Realm.getDefaultInstance();
+
         boardId = getIdByTable(realm, Board.class);
         noteId = getIdByTable(realm, Note.class);
 
