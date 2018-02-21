@@ -105,7 +105,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             contextMenu.setHeaderTitle(fruitSelected.getName());
             contextMenu.setHeaderIcon(fruitSelected.getImage());
 
-            MenuInflater inflater = mContext.getMenuInflater;
+            MenuInflater infa
         }
     }
     /**

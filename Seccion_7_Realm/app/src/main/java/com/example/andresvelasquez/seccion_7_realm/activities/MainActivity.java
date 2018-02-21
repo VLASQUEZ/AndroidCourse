@@ -1,12 +1,14 @@
 package com.example.andresvelasquez.seccion_7_realm.activities;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -16,9 +18,10 @@ import com.example.andresvelasquez.seccion_7_realm.adapters.BoardAdapter;
 import com.example.andresvelasquez.seccion_7_realm.models.Board;
 
 import io.realm.Realm;
+import io.realm.RealmChangeListener;
 import io.realm.RealmResults;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
     private FloatingActionButton fab;
     private Realm realm;
     private ListView listView;
@@ -31,7 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
         results = realm.where(Board.class).findAll();
-
+        results.addChangeListener(new RealmChangeListener<RealmResults<Board>>() {
+            @Override
+            public void onChange(RealmResults<Board> boards) {
+                boardAdapter.notifyDataSetChanged();
+            }
+        });
         boardAdapter = new BoardAdapter(this,results,R.layout.list_view_board_item);
         listView = (ListView) findViewById(R.id.listViewBoard);
         listView.setAdapter(boardAdapter);
@@ -40,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showAlertForCreatingBoard("Add new board","Add title for board");
-                boardAdapter.notifyDataSetChanged();
+                //boardAdapter.notifyDataSetChanged();
             }
         });
     }
@@ -91,5 +99,14 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.create();
         builder.show();
+    }
+    /**
+     * Event item click del ListView
+     * */
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent i = new Intent(MainActivity.this, NoteActivity.class);
+        i.putExtra("id",results.get(position).getId());
+        startActivity(i);
     }
 }
