@@ -14,14 +14,14 @@
         android:orientation="horizontal"
         android:paddingTop="7dp">
         <TextView
-            android:id="@+id/txtNoteDesc"
+            android:id="@+id/txtBoardTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="TextView"
              android:layout_weight="0.8"
             android:textSize="18sp"/>
         <TextView
-            android:id="@+id/txtNoteCreateAt"
+            android:id="@+id/txtBoardNotes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -29,4 +29,10 @@
             android:textSize="12sp"/>
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/txtBoardCreatedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="12sp"/>
 </LinearLayout>
