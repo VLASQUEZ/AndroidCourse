@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.olimpiait.reconoser.sharedpreferences.Preferences.Preferences;
+
 public class LoginActivity extends AppCompatActivity {
 
     private SharedPreferences prefs;
@@ -25,7 +27,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+
         bindUI();
+
         prefs = getSharedPreferences("loginPrefs", Context.MODE_PRIVATE);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        setCredentialsIfExist();
     }
 
     /**
@@ -59,6 +64,16 @@ public class LoginActivity extends AppCompatActivity {
         swRemember = (Switch) findViewById(R.id.swRememberUser);
     }
 
+
+    private void setCredentialsIfExist(){
+        String email = Preferences.getUserEmailPrefs(prefs);
+        String password = Preferences.getUserPasswordPrefs(prefs);
+
+        if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
+            etEmail.setText(email);
+            etPassword.setText(password);
+        }
+    }
     /**
      * Valida si el email se encuentra en un formato correcto
      * @param email email del usuario
@@ -90,4 +105,5 @@ public class LoginActivity extends AppCompatActivity {
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }
+
 }
