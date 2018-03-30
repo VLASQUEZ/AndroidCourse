@@ -6,15 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.andresvelasquez.seccion_9_fragments.activities.MainActivity"
     android:layout_margin="@dimen/activity_margin"
-    android:orientation="vertical"
-    >
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="@android:color/holo_blue_light">
 
     <fragment
         android:id="@+id/dataFragment"
         android:name="com.example.andresvelasquez.seccion_9_fragments.fragments.DataFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
         tools:layout="@layout/fragment_data"/>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.andresvelasquez.seccion_9_fragments.fragments.DetailsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        tools:layout="@layout/fragment_details"/>
+
 
 </LinearLayout>
