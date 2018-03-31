@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <fragment
+        android:id="@+id/mailFragment"
+        android:name="com.example.andresvelasquez.practica_9_fragments.fragments.MailListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        tools:layout="@layout/fragment_mail_list"
+        />
+    <fragment
+        android:id="@+id/mailDetailsFragment"
+        android:name="com.example.andresvelasquez.practica_9_fragments.fragments.MailDetailsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        tools:layout="@layout/fragment_mail_list"
+        />
+</LinearLayout>

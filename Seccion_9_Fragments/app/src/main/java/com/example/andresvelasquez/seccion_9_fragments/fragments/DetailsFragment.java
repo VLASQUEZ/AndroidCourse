@@ -31,5 +31,8 @@ public class DetailsFragment extends Fragment {
     public void setText(String text){
         details.setText(text);
     }
-
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
 }
