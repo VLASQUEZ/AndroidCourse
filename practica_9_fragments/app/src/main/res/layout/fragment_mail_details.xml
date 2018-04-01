@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MailDetailsFragment">
+    tools:context=".fragments.MailDetailsFragment"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:id="@+id/detailsLayout"
+    android:visibility="invisible">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Subject: "/>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="From:"/>
+
+        <TextView
+            android:id="@+id/txtFrom"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>

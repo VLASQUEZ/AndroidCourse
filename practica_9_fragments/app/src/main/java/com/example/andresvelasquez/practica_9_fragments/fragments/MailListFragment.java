@@ -1,6 +1,7 @@
 package com.example.andresvelasquez.practica_9_fragments.fragments;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,7 +30,7 @@ public class MailListFragment extends Fragment {
     RecyclerView.LayoutManager mLayoutManager;
     RecyclerView recyclerView;
     List<Mail> mailList;
-
+    MailListener listener;
 
     public MailListFragment() {
         // Required empty public constructor
@@ -43,6 +44,23 @@ public class MailListFragment extends Fragment {
     }
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try{
+            listener =(MailListener) context;
+            throw new ClassCastException(context.toString() + "Should implements MailListener");
+        }
+        catch (Exception e){
+
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_mail_list, container, false);
@@ -53,7 +71,7 @@ public class MailListFragment extends Fragment {
         mAdapter = new MailAdapter(mailList, R.layout.mail_item, new MailAdapter.onMailClickListener() {
             @Override
             public void onMailClick(Mail mail, int position) {
-                //TODO: Iniciar el fragment con los datos y enviar los datos
+                listener.sendMail(mail);
             }
         });
         recyclerView.setHasFixedSize(true);
@@ -63,5 +81,7 @@ public class MailListFragment extends Fragment {
 
         return v;
     }
-
+    public interface MailListener{
+        void sendMail(Mail mail);
+    }
 }

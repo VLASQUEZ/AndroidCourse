@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
-    android:orientation="vertical"
-    android:weightSum="100">
-
+    tools:context=".activities.DetailsActivity"
+    android:orientation="vertical">
     <fragment
-        android:id="@+id/mailFragment"
-        android:name="com.example.andresvelasquez.practica_9_fragments.fragments.MailListFragment"
+        android:id="@+id/mailDetailsFragment"
+        android:name="com.example.andresvelasquez.practica_9_fragments.fragments.MailDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="100"
-        tools:layout="@layout/fragment_mail_list"
-        />
-
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_mail_details"/>
 </LinearLayout>

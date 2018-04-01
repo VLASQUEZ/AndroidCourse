@@ -2,7 +2,9 @@ package com.example.andresvelasquez.practica_9_fragments.model;
 
 import com.example.andresvelasquez.practica_9_fragments.util.Util;
 
-public class Mail {
+import java.io.Serializable;
+
+public class Mail implements Serializable {
 
     private String subject;
     private String message;
