@@ -28,6 +28,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -39,7 +40,7 @@ import java.util.Locale;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MapFragment extends Fragment implements OnMapReadyCallback , GoogleMap.OnMarkerDragListener,View.OnClickListener{
+public class MapFragment extends Fragment implements OnMapReadyCallback , GoogleMap.OnMarkerDragListener,View.OnClickListener, LocationListener{
 
     private GoogleMap map;
     private MapView mapView;
@@ -49,6 +50,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback , Google
     private FloatingActionButton fab;
     private Location location;
     private LocationManager locationManager;
+    private Marker mMarker;
+    private CameraPosition cameraZoom;
 
     public MapFragment() {
 
@@ -79,7 +82,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback , Google
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
-
         locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
 
 
@@ -99,28 +101,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback , Google
         map.getUiSettings().setMyLocationButtonEnabled(false);
 
 
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, new LocationListener() {
-            @Override
-            public void onLocationChanged(Location location) {
-                MapFragment.this.location = location;
-                Toast.makeText(getContext(),"Changed",Toast.LENGTH_SHORT).show();
-            }
 
-            @Override
-            public void onStatusChanged(String provider, int status, Bundle extras) {
 
-            }
-
-            @Override
-            public void onProviderEnabled(String provider) {
-
-            }
-
-            @Override
-            public void onProviderDisabled(String provider) {
-
-            }
-        });
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,1000,0,this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,1000,0,this);
 
         map.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener() {
             @Override
@@ -182,6 +166,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback , Google
             if(gpsSignal == 0){
                 //No hay señal de gps o no se encuentra activo
                 showGPSInfo();
+            }else{
+                Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                if(location == null)
+                    location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            }
+            this.location = location;
+
+            if (this.location != null) {
+                createOrUpdateMarker(location);
+                zoomToLocation(location);
+
             }
         }
         catch (Settings.SettingNotFoundException e){
@@ -201,5 +196,43 @@ public class MapFragment extends Fragment implements OnMapReadyCallback , Google
                 })
                 .setNegativeButton("NO" ,null)
                 .show();
+    }
+    private void createOrUpdateMarker(Location location){
+        if(mMarker == null){
+            mMarker = map.addMarker(new MarkerOptions().position(new LatLng(location.getLongitude(),location.getLatitude())));
+
+        }else{
+            mMarker.setPosition(new LatLng(location.getLatitude(),location.getLongitude()));
+        }
+    }
+
+    private void zoomToLocation(Location location){
+        cameraZoom = new CameraPosition.Builder()
+                .target(new LatLng(location.getLatitude(),location.getLongitude()))
+                .zoom(15)
+                .bearing(0)
+                .tilt(30)
+                .build();
+        map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraZoom));
+
+    }
+    @Override
+    public void onLocationChanged(Location location) {
+        createOrUpdateMarker(location);
+
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
     }
 }
