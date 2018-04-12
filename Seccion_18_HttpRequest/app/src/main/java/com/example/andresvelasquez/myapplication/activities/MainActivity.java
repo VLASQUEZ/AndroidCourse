@@ -1,9 +1,11 @@
-package com.example.andresvelasquez.myapplication;
+package com.example.andresvelasquez.myapplication.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.andresvelasquez.myapplication.R;
+import com.example.andresvelasquez.myapplication.models.City;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -32,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         }catch(JSONException e){
             e.printStackTrace();
         }
-
 
         /**
          *  Serializacion Implementando GSON

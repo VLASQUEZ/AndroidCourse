@@ -1,10 +1,13 @@
-package com.example.andresvelasquez.myapplication;
+package com.example.andresvelasquez.myapplication.models;
 
 import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class City {
 
     //Solamente Serializa este campo
+    //SerializedName => Nombre del campo del JSON
+    @SerializedName("name")
     @Expose
     private String name;
     private int id;
