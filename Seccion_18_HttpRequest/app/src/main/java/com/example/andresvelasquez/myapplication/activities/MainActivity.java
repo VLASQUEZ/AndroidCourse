@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String jsonStr ="{\n " +
+    /*    String jsonStr ="{\n " +
                 "id:200," +
                 "name:\'london\'" +
                 "}";
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             String name = (String) json.getString("name");
             int id = (Integer) json.getInt("id");
 
-            city =  new City(name,id);
+            city =  new City(name,id,);
 
         }catch(JSONException e){
             e.printStackTrace();
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
          *  Serializacion Implementando GSON
          */
 
-        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+        /*Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         City city1 = gson.fromJson(jsonStr,City.class);
-        Toast.makeText(this,"City name :"+city1.getName(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"City name :"+city1.getName(),Toast.LENGTH_SHORT).show();*/
     }
 }

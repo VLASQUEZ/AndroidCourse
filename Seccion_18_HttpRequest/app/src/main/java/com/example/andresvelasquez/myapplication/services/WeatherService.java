@@ -13,5 +13,7 @@ public interface WeatherService {
   //http://samples.openweathermap.org/data/2.5/forecast?id=524901&appid=cdfbc99145392451b32ada315bfc1e97
   @GET("weather")
   Call<City> listCities(@Query("q") String city,@Query("appid")String key);
+  @GET("weather")
+  Call<City> listCitiesCelcius(@Query("q") String city,@Query("appid")String key,@Query("units") String value);
 
 }
