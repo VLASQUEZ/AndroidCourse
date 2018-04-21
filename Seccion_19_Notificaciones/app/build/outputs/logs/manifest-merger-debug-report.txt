@@ -1,0 +1,110 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/61c6b31575513b1d29d6bf7a8d3f0c50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f584d5391f96d321af9b5f4443d0458b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/e6cde8ec41886a47e47f1d0f2bdd3408/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/2620a27e9bf338d006376198f7e4df39/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2ecfda7bc6eef50f0b53411f98071d2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/615e81dbe1398b86abee7d564c0182a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2c75995905051c25dd0ab8cca34f6149/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9cb691caed42867ce4fd966f7f4affa9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa9dd3eafcb315265affc8b070f7c03f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2d2a5f300e20e05d8c5a45a375c6344c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4c3fd064ba1b04775ff720fd814fdb93/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20a773f6f7186ccd9ee0fa816fc57b85/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a25d3cdd540514713eb1f7bf89bc96a6/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:3:5-68
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f584d5391f96d321af9b5f4443d0458b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f584d5391f96d321af9b5f4443d0458b/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.andresvelasquez.seccion_19_notificaciones.MainActivity
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.andresvelasquez.seccion_19_notificaciones.DetailsActivity
+ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:19:9-62
+	android:name
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml:19:19-50
+uses-sdk
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/61c6b31575513b1d29d6bf7a8d3f0c50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/61c6b31575513b1d29d6bf7a8d3f0c50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f584d5391f96d321af9b5f4443d0458b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/f584d5391f96d321af9b5f4443d0458b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/e6cde8ec41886a47e47f1d0f2bdd3408/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/e6cde8ec41886a47e47f1d0f2bdd3408/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/2620a27e9bf338d006376198f7e4df39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/2620a27e9bf338d006376198f7e4df39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2ecfda7bc6eef50f0b53411f98071d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2ecfda7bc6eef50f0b53411f98071d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/615e81dbe1398b86abee7d564c0182a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/615e81dbe1398b86abee7d564c0182a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2c75995905051c25dd0ab8cca34f6149/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/2c75995905051c25dd0ab8cca34f6149/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9cb691caed42867ce4fd966f7f4affa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9cb691caed42867ce4fd966f7f4affa9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa9dd3eafcb315265affc8b070f7c03f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/aa9dd3eafcb315265affc8b070f7c03f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2d2a5f300e20e05d8c5a45a375c6344c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2d2a5f300e20e05d8c5a45a375c6344c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4c3fd064ba1b04775ff720fd814fdb93/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4c3fd064ba1b04775ff720fd814fdb93/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20a773f6f7186ccd9ee0fa816fc57b85/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20a773f6f7186ccd9ee0fa816fc57b85/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a25d3cdd540514713eb1f7bf89bc96a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/andresvelasquez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a25d3cdd540514713eb1f7bf89bc96a6/AndroidManifest.xml:20:5-44
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		ADDED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/src/main/AndroidManifest.xml

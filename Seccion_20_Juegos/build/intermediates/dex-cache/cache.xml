@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/andresvelasquez/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.8/6f0497b7958216464101adfb7bdc3a0f7b88d6d3/gdx-box2d-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="6f0497b7958216464101adfb7bdc3a0f7b88d6d3">
+        <dex dex="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/android/build/intermediates/pre-dexed/debug/gdx-box2d-1.9.8_66efc6cb6c3eb6dc1019cf1dfbe5702c09bd93d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/andresvelasquez/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.8/d92b5b8beab10e3b3c0dd836d4fc186f95e7ea4b/gdx-freetype-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d92b5b8beab10e3b3c0dd836d4fc186f95e7ea4b">
+        <dex dex="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/android/build/intermediates/pre-dexed/debug/gdx-freetype-1.9.8_3e1804fbe2cecb353e4a96ba8409b3e9cd3a89e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/andresvelasquez/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.8/84024cd60ad6f26370891fbcd17de9f0167e662/gdx-backend-android-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="084024cd60ad6f26370891fbcd17de9f0167e662">
+        <dex dex="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/android/build/intermediates/pre-dexed/debug/gdx-backend-android-1.9.8_168f933e5596619a68f6b729a096dde592c78b6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/andresvelasquez/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.8/a35a0076fbce873f9c2d5a1a1c8066244231bb3c/gdx-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a35a0076fbce873f9c2d5a1a1c8066244231bb3c">
+        <dex dex="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/android/build/intermediates/pre-dexed/debug/gdx-1.9.8_43871f317e62f7cdcc5617f33518aca94821af32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/core/build/libs/core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="f586f02f0afc6e6d4692cf27598817d92ec67150">
+        <dex dex="/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_20_Juegos/android/build/intermediates/pre-dexed/debug/core-1.0_4fb82342cd7795fc0d19e8185ffe6cb6f31987a3.jar" />
+    </item>
+
+</items>

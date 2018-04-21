@@ -1,0 +1,4 @@
+#Sat Apr 14 21:54:59 COT 2018
+base.0=/Users/andresvelasquez/Documents/git/AndroidCourse/Seccion_19_Notificaciones/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex
