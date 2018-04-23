@@ -1,4 +1,4 @@
-package com.vlasquez.games.jumdontdie.screens;
+package com.vlasquez.games.jumdontdie.scene2d;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
@@ -6,10 +6,9 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.vlasquez.games.jumdontdie.MainGame;
-import com.vlasquez.games.jumdontdie.actors.PlayerActor;
-import com.vlasquez.games.jumdontdie.actors.SpineActor;
+import com.vlasquez.games.jumdontdie.screens.BaseScreen;
 
-public class MainGameScreen extends BaseScreen {
+public class Scene2DScreen extends BaseScreen {
 
     private Stage stage ;
     private PlayerActor player;
@@ -17,7 +16,7 @@ public class MainGameScreen extends BaseScreen {
     Texture texturePlayer,textureSpine;
     TextureRegion spineRegion;
 
-    public MainGameScreen(MainGame game) {
+    public Scene2DScreen(MainGame game) {
         super(game);
         texturePlayer = new Texture("player1.png");
         textureSpine = new Texture("player1.png");
