@@ -1,4 +1,4 @@
-package com.vlasquez.games.jumdontdie.actors;
+package com.vlasquez.games.jumdontdie.scene2d;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
