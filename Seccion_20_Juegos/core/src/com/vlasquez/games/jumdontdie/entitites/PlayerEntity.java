@@ -11,7 +11,9 @@ import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
+import static com.vlasquez.games.jumdontdie.Constants.IMPULSE_JUMP;
 import static com.vlasquez.games.jumdontdie.Constants.PIXELS_IN_METER;
+import static com.vlasquez.games.jumdontdie.Constants.PLAYER_SPEED;
 
 /**
  * @author <a href="avelasquez@clickdelivery.com">Andres Velasquez</a>
@@ -64,7 +66,7 @@ public class PlayerEntity extends Actor {
     super.act(delta);
 
     //Iniciar un salto cuando toque la pantalla
-    if (Gdx.input.justTouched() || mustJump) {
+    if (mustJump) {
       mustJump = false;
       jump();
     }
@@ -72,15 +74,18 @@ public class PlayerEntity extends Actor {
     //Hacer avanzar al jugador
     if (isAlive) {
       float speedY = body.getLinearVelocity().y;
-      body.setLinearVelocity(8, speedY);
+      body.setLinearVelocity(PLAYER_SPEED, speedY);
+    }
+    if (jumping) {
+      body.applyForceToCenter(0, -IMPULSE_JUMP * 1.15f, true);
     }
   }
 
-  private void jump() {
+  public void jump() {
     if (!jumping && isAlive) {
       jumping = true;
       Vector2 pos = body.getPosition();
-      body.applyLinearImpulse(0, 20, pos.x, pos.y, true);
+      body.applyLinearImpulse(0, IMPULSE_JUMP, pos.x, pos.y, true);
     }
   }
 
